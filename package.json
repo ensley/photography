@@ -1,0 +1,37 @@
+{
+	"name": "photosite",
+	"version": "1.0.0",
+	"description": "John Ensley's photography site",
+	"repository": {
+		"type": "git"
+	},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"graceful-fs": "^4.1.11",
+		"photoswipe": "^4.1.2"
+	},
+	"devDependencies": {
+		"breakpoint-sass": "^2.7.1",
+		"deepmerge": "^2.0.1",
+		"exif-parser": "^0.1.12",
+		"fs": "0.0.1-security",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-clean-css": "^3.9.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-eslint": "^4.0.0",
+		"gulp-help": "^1.6.1",
+		"gulp-image-resize": "^0.13.0",
+		"gulp-imagemin": "^3.4.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^3.1.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-util": "^3.0.8",
+		"image-size": "^0.6.1",
+		"imagemin": "^5.3.1",
+		"js-yaml": "^3.10.0",
+		"merge": "^1.2.0",
+		"recursive-readdir-sync": "^1.0.6",
+		"run-sequence": "^2.2.0"
+	}
+}
