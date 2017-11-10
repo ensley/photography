@@ -15,6 +15,7 @@ const concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
 const exif = require('exif-parser');
 const fs = require('fs');
+const ghPages = require('gulp-gh-pages');
 const imagemin = require('gulp-imagemin');
 const imgsize = require('image-size');
 const merge = require('deepmerge');
@@ -266,4 +267,9 @@ gulp.task('jekyll', 'Run jekyll build', (cb) => {
 
 gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, htaccess then jekyll', (cb) => {
   runSequence(['sass', 'js'], 'jekyll', cb);
+});
+
+gulp.task('deploy', ['build'], () => {
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages())
 });
